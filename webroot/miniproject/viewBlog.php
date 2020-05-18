@@ -43,24 +43,8 @@
           <option value="11">November</option>
           <option value="12">December</option>
         </select>
-        <button type="button" onclick="checkempty()" value="submit">Search</button>
+        <button type="submit" value="submit">Search</button>
       </form>
-      <script>
-        function checkempty()
-        {
-          var form = document.getElementById("monthpick");
-          var month = document.getElementById("months");
-
-          if (month.value == 0)
-          {
-            form.submit();
-          }
-          else
-          {
-            e.preventDefault();
-          }
-        }
-      </script>
   </section><br>
 
   <section>
