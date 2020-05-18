@@ -53,7 +53,7 @@
     <?php
       include("config.php");
 
-      $month = $_POST["months"];
+      $month = $_POST["monthpick"];
 
       $res = mysqli_query($conn, "SELECT * FROM BLOG;");
       if (!$res)
