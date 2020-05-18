@@ -2,7 +2,7 @@
 
 include("config.php");
 
-if (isset($_POST["enter"]))
+if (isset($_POST["submit"]))
 {
   $title = $_POST["title"];
   $description = $_POST["description"];
