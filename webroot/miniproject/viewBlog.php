@@ -53,7 +53,7 @@
          }
          else
          {
-           echo "<h4><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h4><p><style='color: white; font-family: Tahoma;'>", $result[description], "<br><small style='color:white; font-family:Tahoma;'>", date("d/m/y g:i A", strtotime($result["datepost"])), "</p><hr>";
+           echo "<h4><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h4><p><style='color: white; font-family: Tahoma;'>", $result[description], "</p><h2><small style='color:white; font-family:Tahoma;'>", date("d/m/y g:i A", strtotime($result["datepost"])), "</h2><hr>";
          }
        }
      ?>
