@@ -1,0 +1,138 @@
+header {
+  text-align: center;
+  font-family: Tahoma;
+}
+
+.navmenu ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3176f5;
+}
+
+aside {
+  float: right;
+  padding: 10px;
+  width: 15%
+}
+
+#left {
+  float: left;
+  padding: 10px;
+}
+
+#left .info h2, h3, p, pre, li {
+  font-family: Tahoma;
+  text-align: left;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+}
+
+figcaption {
+  font-family: Tahoma;
+}
+
+.navmenu li {
+  float: left;
+}
+
+.navmenu li a {
+  text-align: center;
+  display: block;
+  font-family: Tahoma;
+  color: white;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.navmenu li a:hover {
+  background-color: #2761cc;
+}
+
+.about h2, p{
+  text-align: center;
+  font-family: Tahoma;
+}
+
+.login {
+  text-align: center;
+}
+
+.login label {
+  font-family: Tahoma;
+  color: white;
+  padding-bottom: 10px;
+}
+
+
+.box
+{
+  width: 780px;
+  margin: auto;
+  text-align: center;
+  background-color: #3176f5;
+}
+
+.blogbox
+{
+  margin: auto;
+  background-color: #3176f5;
+  text-align: center;
+  color: white;
+  font-family: Tahoma;
+  overflow: hidden;
+}
+
+
+hr
+{
+  color: white;
+}
+
+.blogbox button
+{
+  background-color: #2761cc;
+  color: white;
+  border: none;
+  display: inline-block;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.blog
+{
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  background-color: #3176f5;
+}
+
+#enter .blog .title text
+{
+  width: 600px;
+  font-family: Tahoma;
+}
+
+#enter .blog .description text
+{
+  width: 600px;
+  height: 900px;
+  font-family: Tahoma;
+}
+
+button
+{
+  background-color: #2761cc;
+  color: white;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+button:hover
+{
+  background-color: #0941ab;
+}
