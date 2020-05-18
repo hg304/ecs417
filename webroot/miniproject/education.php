@@ -6,7 +6,7 @@
 
 <body>
   <header>
-    <h2>My homepage</h2>
+    <h2>My education</h2>
   </header>
 
   <nav class="navmenu">

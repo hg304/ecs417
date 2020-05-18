@@ -32,9 +32,6 @@ if (isset($_POST["submit"]))
       </head>
 
       <body>
-        <header>
-          <h2>My homepage</h2>
-        </header>
 
         <nav class="navmenu">
           <ul>

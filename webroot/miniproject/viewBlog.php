@@ -6,7 +6,7 @@
 
 <body>
   <header>
-    <h2>My homepage</h2>
+    <h2>My blog</h2>
   </header>
 
   <nav class="navmenu">
@@ -100,4 +100,8 @@
      ?>
    </article>
    </section>
+
+   <footer>
+     <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+   </footer>
  </body>
