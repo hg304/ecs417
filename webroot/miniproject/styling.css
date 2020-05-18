@@ -12,6 +12,11 @@ header {
 .topme article {
   overflow: hidden;
   display:inline-block;
+  font-family: Tahoma;
+}
+
+.topme .search {
+  float: right;
 }
 
 aside {

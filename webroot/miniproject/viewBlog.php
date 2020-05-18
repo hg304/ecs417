@@ -51,7 +51,7 @@
           var form = document.getElementById("monthpick");
           var month = document.getElementById("months");
 
-          if (month.value.length > 0)
+          if (month.value == 0)
           {
             form.submit();
           }
