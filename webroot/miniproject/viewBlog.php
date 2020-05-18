@@ -53,11 +53,11 @@
     <?php
       include("config.php");
 
-      $month = $_POST["months"];
+      $month = $_POST["monthpick"];
 
-      if ($month == null)
+      if (!empty($month))
       {
-        $res = mysqli_query($conn, "SELECT * FROM BLOG;");
+        $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(postdate) = $month;");
         if (!$res)
          {
           printf("Error: %s\n", mysqli_error($conn));
@@ -79,10 +79,11 @@
 
            echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $result[description], "</p><p><br><small style='color:white; font-family:Tahoma;'>", date("d/m/y g:i A", strtotime($result["datepost"])), "</small></p><hr>";
          }
+
        }
        else
        {
-         $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(postdate) = $month;");
+         $res = mysqli_query($conn, "SELECT * FROM BLOG;");
          if (!$res)
           {
            printf("Error: %s\n", mysqli_error($conn));
@@ -104,7 +105,7 @@
 
             echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $result[description], "</p><p><br><small style='color:white; font-family:Tahoma;'>", date("d/m/y g:i A", strtotime($result["datepost"])), "</small></p><hr>";
           }
-        }
+       }
      ?>
    </article>
    </section>
