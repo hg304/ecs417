@@ -47,14 +47,7 @@
        {
          $result = mysqli_fetch_array($res);
 
-         if ($result == 1)
-         {
-           echo "<h2><style='font-family: Tahoma; color: white;'>", $result["title"], "</h2><p><style='color: white; font-family: Tahoma;'>", $result[description], "<br><small style='color:white; font-family:Tahoma;'>", date("d/m/y g:i A", strtotime($result["datepost"])), "</p>";
-         }
-         else
-         {
-           echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $result[description], "</p><p><br><small style='color:white; font-family:Tahoma;'>", date("d/m/y g:i A", strtotime($result["datepost"])), "</p><hr>";
-         }
+         echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $result[description], "</p><p><br><small style='color:white; font-family:Tahoma;'>", date("d/m/y g:i A", strtotime($result["datepost"])), "</small></p><hr>";
        }
      ?>
    </article>
