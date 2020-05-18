@@ -19,6 +19,12 @@ header {
   float: right;
 }
 
+footer {
+  background-color: #3176f5;
+  overflow: hidden;
+  display: block;
+}
+
 aside {
   float: right;
   padding: 10px;
