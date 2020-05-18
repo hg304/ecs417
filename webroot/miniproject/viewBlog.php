@@ -82,7 +82,7 @@
        }
        else
        {
-         $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(postdate) = ;");
+         $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(postdate) = $month;");
          if (!$res)
           {
            printf("Error: %s\n", mysqli_error($conn));
