@@ -64,3 +64,8 @@
      ?>
    </article>
   </aside>
+
+  <br><footer>
+    <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+  </footer>
+</body>
