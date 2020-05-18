@@ -55,20 +55,20 @@
 
       $month = $_POST["months"];
 
+      $res = mysqli_query($conn, "SELECT * FROM BLOG;");
+      if (!$res)
+       {
+        printf("Error: %s\n", mysqli_error($conn));
+        exit();
+       }
+
+       $rows = mysqli_num_rows($res);
+
       if (!empty($month))
       {
-        $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = '$month';");
-        if (!$res)
-         {
-          printf("Error: %s\n", mysqli_error($conn));
-          exit();
-         }
-
-         $rows = mysqli_num_rows($res);
-
          for ($i = $rows; $i > 0; $i--)
          {
-           $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i'");
+           $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i' AND MONTH(datepost) = '$month'");
            if (!$res2)
             {
              printf("Error: %s\n", mysqli_error($conn));
@@ -83,15 +83,6 @@
        }
        else
        {
-         $res = mysqli_query($conn, "SELECT * FROM BLOG;");
-         if (!$res)
-          {
-           printf("Error: %s\n", mysqli_error($conn));
-           exit();
-          }
-
-          $rows = mysqli_num_rows($res);
-
           for ($i = $rows; $i > 0; $i--)
           {
             $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i';");
