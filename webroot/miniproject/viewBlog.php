@@ -57,7 +57,7 @@
 
       if (!empty($month))
       {
-        $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = $month;");
+        $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = '$month';");
         if (!$res)
          {
           printf("Error: %s\n", mysqli_error($conn));
@@ -68,7 +68,7 @@
 
          for ($i = $rows; $i > 0; $i--)
          {
-           $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i';");
+           $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i'");
            if (!$res2)
             {
              printf("Error: %s\n", mysqli_error($conn));
