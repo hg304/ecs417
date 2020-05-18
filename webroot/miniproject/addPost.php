@@ -2,14 +2,16 @@
 
 include("config.php");
 
-$title = $_POST["title"];
-$description = $_POST["description"];
+if (isset($_POST["submit"]))
+{
+  $title = $_POST["title"];
+  $description = $_POST["description"];
 
-$sql = "INSERT INTO BLOG (title, description, postdate) VALUES ('$title', '$description', now());";
+  $sql = "INSERT INTO BLOG (title, description, postdate) VALUES ('$title', '$description', now());";
 
-$res = mysqli_query($conn, $sql);
+  $res = mysqli_query($conn, $sql);
 
-header("Location:viewBlog.php");
-
+  header("Location:viewBlog.php");
+}
 
 ?>
