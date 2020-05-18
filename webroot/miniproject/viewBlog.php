@@ -29,7 +29,7 @@
     <article class="search">
       <form id="monthpick" method="POST" action="viewBlog.php">
         <label for="months">Select month</label>
-        <select class="months">
+        <select id="months">
           <option value="1">January</option>
           <option value="2">February</option>
           <option value="3">March</option>
@@ -53,11 +53,11 @@
     <?php
       include("config.php");
 
-      $month = $_POST["monthpick"];
+      $month = $_POST["months"];
 
       if (!empty($month))
       {
-        $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(postdate) = $month;");
+        $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = $month;");
         if (!$res)
          {
           printf("Error: %s\n", mysqli_error($conn));
