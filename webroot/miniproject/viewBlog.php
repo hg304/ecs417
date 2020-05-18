@@ -53,7 +53,7 @@
     <?php
       include("config.php");
 
-      $month = $_POST["monthpick"];
+      $month = $_POST["months"];
 
       $res = mysqli_query($conn, "SELECT * FROM BLOG;");
       if (!$res)
@@ -64,7 +64,7 @@
 
        $rows = mysqli_num_rows($res);
 
-      if (!empty($month))
+      if (!isset($month))
       {
          for ($i = $rows; $i > 0; $i--)
          {
