@@ -41,10 +41,11 @@
                 var submitb = document.getElementById("submit");
                 var form = document.getElementById("enter");
 
-                submitb.addEventListener("submit", function(e))
+                submitb.addEventListener("click", function(e))
                 {
                   if (title.value.length > 0 && desc.value.length > 0)
                   {
+                    form.submit();
                   }
                   else
                   {
