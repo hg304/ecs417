@@ -9,6 +9,11 @@ header {
   background-color: #3176f5;
 }
 
+.topme article {
+  overflow: hidden;
+  display:inline-block;
+}
+
 aside {
   float: right;
   padding: 10px;
