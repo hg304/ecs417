@@ -22,7 +22,7 @@ header {
 footer {
   background-color: #3176f5;
   overflow: hidden;
-  display: block;
+  display: inline-block;
 }
 
 aside {

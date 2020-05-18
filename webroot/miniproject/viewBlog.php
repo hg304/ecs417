@@ -64,7 +64,7 @@
 
        $rows = mysqli_num_rows($res);
 
-      if (!isset($month))
+      if (!empty($month))
       {
          for ($i = $rows; $i > 0; $i--)
          {
