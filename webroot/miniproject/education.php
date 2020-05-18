@@ -37,8 +37,16 @@
       <img src="https://media.wsimag.com/attachments/7fa16d4e489e524267badc71bf916a5e68bec488/store/fill/1090/613/c1e83957fe71d36adeb4b070c1573135072a8b6331e18a2f5f7e163c769f/Venezuela-does-not-appear-in-the-Global-Teacher-Status.jpg">
     <article class="info">
       <h2>Education</h2>
-      <h3><pre>2019-present     BSc Computer Science    Queen Mary University of London</pre></h3><hr>
-      <h3><pre>2011-2018     Kingsbury High School</pre></h3><hr>
+      <h3><pre>2019-present     BSc Computer Science    Queen Mary University of London</pre></h3>
+      <ul>
+        <li>Currently pursuing a Bachelor's Degree in Computer Science.</li>
+      </ul><hr>
+      <h3><pre>2011-2018     Kingsbury High School</pre></h3>
+      <ul>
+        <li>10 GCSEs A-C including English Language and Maths</li>
+        <li>Distinction* in BTEC IT</li>
+        <li>Passed 2 A-Levels</li>
+      </ul><hr>
     </article>
   </section>
 
