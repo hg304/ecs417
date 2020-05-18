@@ -26,7 +26,7 @@
     <fieldset class="blog">
           <input type="text" id="title" placeholder="Title" name="title"><br><br>
           <input type="text" id="description" placeholder="Write anything here" name="description">
-          <br><br><button type="button" onclick="checkempty()" value="submit">Submit</button>
+          <br><br><button type="button" id="submit" onclick="checkempty()" value="submit">Submit</button>
           <button type="button" onclick="resetText()" value="reset">Clear</button>
           <script>
               function resetText()
@@ -38,16 +38,20 @@
               {
                 var form = getElementById("enter");
                 var title = getElementById("title");
+                var submitb = getElementById("submit");
                 var desc = getElementById("description");
 
-                if (title.value.length > 0 && desc.value.length > 0)
+                submitb.addEventListener("click", function(e)
                 {
-                  form.submit();
-                }
-                else
-                {
-                  e.preventDefault();
-                }
+                  if (title.value.length > 0 && desc.value.length > 0)
+                  {
+                    form.submit();
+                  }
+                  else
+                  {
+                    e.preventDefault();
+                  }
+                }, false);
               }
 
           </script>
