@@ -3,7 +3,7 @@
 session_start();
 include("config.php");
 
-if (isset($_POST["preview"]))
+if ($_POST["submit"] == "preview")
 {
   $title = $_POST["title"];
   $description = $_POST["description"];
@@ -20,7 +20,7 @@ if (isset($_POST["preview"]))
 
   header("Location:preview.php");
 }
-else if (isset($_POST["submit"]))
+else if ($_POST["submit"] == "submit")
 {
   $title = $_POST["title"];
   $description = $_POST["description"];
