@@ -53,7 +53,7 @@
     <?php
       include("config.php");
 
-      $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = '$month';");
+      $res = mysqli_query($conn, "SELECT * FROM BLOG;");
       if (!$res)
        {
         printf("Error: %s\n", mysqli_error($conn));
