@@ -30,7 +30,7 @@ session_start();
           <input type="text" id="title" placeholder="Title" name="title" <?php echo "value=", $_SESSION["title"]?>><br><br>
           <input type="text" id="description" placeholder="Write anything here" name="description" <?php echo "value=", $_SESSION["description"]?>>
           <br><br><button type="button" name="submit" onclick="checkemptysub()" value="submit">Submit</button>
-          <button type="button" name="submit" onclick="checkemptyprev()" formaction="addPreview.php" value="submit">Preview</button>
+          <button type="submit" name="submit" formaction="addPreview.php" value="submit">Preview</button>
           <button type="button" onclick="resetText()" value="reset">Clear</button>
           <script>
 
@@ -74,41 +74,6 @@ session_start();
                   e.preventDefault();
                 }
               }
-
-              function checkemptyprev()
-              {
-                var form = document.getElementById("enter");
-                var title = document.getElementById("title");
-                var desc = document.getElementById("description");
-
-                if (title.value.length > 0 && desc.value.length > 0)
-                {
-                  form.submit();
-                }
-                else
-                {
-                  alert("Both fields have not been filled in");
-                  if (title.value.length == 0)
-                  {
-                    title.style.borderColor = "red";
-                  }
-                  if (title.value.length > 0)
-                  {
-                    title.style.borderColor = "white";
-                  }
-                  if (desc.value.length == 0)
-                  {
-                    desc.style.borderColor = "red";
-                  }
-                  if (desc.value.length > 0)
-                  {
-                    desc.style.borderColor = "white";
-                  }
-                  e.preventDefault();
-                }
-              }
-
-
 
           </script>
     </<fieldset>

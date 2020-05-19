@@ -130,17 +130,14 @@ hr
   background-color: #3176f5;
 }
 
-#enter .blog .title text
+#title, #description
 {
-  width: 600px;
-  font-family: Tahoma;
+  width: 500px;
 }
 
-#enter .blog .description text
+#description
 {
-  width: 600px;
-  height: 900px;
-  font-family: Tahoma;
+  height: 800px;
 }
 
 button
