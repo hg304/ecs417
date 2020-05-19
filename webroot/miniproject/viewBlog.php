@@ -53,21 +53,27 @@
     <?php
       include("config.php");
 
-      $month = $_POST["months"];
+      $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = '$month';");
+      if (!$res)
+       {
+        printf("Error: %s\n", mysqli_error($conn));
+        exit();
+       }
 
-        for ($i = $rows; $i > 0; $i--)
-        {
-          $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i';");
-          if (!$res2)
+       $rows = mysqli_num_rows($res)
+       for ($i = $rows; $i > 0; $i--)
+       {
+         $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i';");
+         if (!$res2)
           {
-            printf("Error: %s\n", mysqli_error($conn));
-            exit();
+           printf("Error: %s\n", mysqli_error($conn));
+           exit();
           }
 
-          $result = mysqli_fetch_array($res2);
+         $result = mysqli_fetch_array($res2);
 
-          echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $result[description], "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), "</small></p><hr>";
-        }
+         echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $result[description], "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), "</small></p><hr>";
+       }
      ?>
    </article>
    <footer>
