@@ -49,6 +49,15 @@
                 }
                 else
                 {
+                  alert("Both fields have not been filled in");
+                  if (title.value.length == 0)
+                  {
+                    title.style.borderColor = "red";
+                  }
+                  if (desc.value.length == 0)
+                  {
+                    title.style.borderColor = "red";
+                  }
                   e.preventDefault();
                 }
               }
