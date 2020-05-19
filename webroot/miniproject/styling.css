@@ -20,8 +20,12 @@ header {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   background-color: #3176f5;
-  overflow: hidden;
+  font-family: Tahoma;
+  color: white;
 }
 
 aside {

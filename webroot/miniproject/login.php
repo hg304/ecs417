@@ -76,6 +76,10 @@ if (isset($_POST["submit"]))
            </form>
           </section>
         </article>
+
+        <footer>
+          <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+        </footer>
 <?php
   }
 }
