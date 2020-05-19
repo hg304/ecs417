@@ -1,7 +1,8 @@
 <?php
 
-  session_start();
+
   include("config.php");
+  session_start();
 
   $title = $_POST["title"];
   $description = $_POST["description"];
