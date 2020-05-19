@@ -43,6 +43,9 @@
         <li>Able to get work done <strong>on time</strong> and <strong>meet deadlines</strong>.</li>
       </ul>
     </article>
+    <footer>
+      <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+    </footer>
   </section>
 
   <aside>
@@ -70,7 +73,4 @@
    </article>
    </aside>
 
-   <br><footer>
-     <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-   </footer>
  </body>

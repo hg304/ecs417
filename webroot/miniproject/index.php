@@ -38,6 +38,9 @@
       <p style="float: left;">Welcome to my portfolio. My name is Hasibullah Ghulamhaidar and I am a first year student<br>currently studying at Queen Mary. I am studying for
       a Bachelor of Science degree in computer Science. I plan to take a masters degree once I graduate. I am<br>passionate about computers and enjoy using them. I also enjoy learning more about computers during my<br>free time in addition to my lectures and labs at Queen Mary.</p>
     </article>
+    <footer>
+      <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+    </footer>
   </section>
 
   <aside>
@@ -65,7 +68,4 @@
    </article>
   </aside>
 
-  <br><footer>
-    <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-  </footer>
 </body>

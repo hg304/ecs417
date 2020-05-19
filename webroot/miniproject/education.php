@@ -48,6 +48,9 @@
         <li>Passed 2 A-Levels</li>
       </ul><hr>
     </article>
+    <footer>
+      <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+    </footer>
   </section>
 
   <aside>
@@ -73,8 +76,4 @@
       }
      ?>
    </aside>
-
-   <br><footer>
-     <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-   </footer>
  </body>
