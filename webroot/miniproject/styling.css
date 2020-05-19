@@ -19,9 +19,12 @@ header {
   float: right;
 }
 
-footer {
+.bottom {
   position: relative;
   bottom:0;
+}
+
+footer {  
   padding:5px, 3px;
   background-color: #3176f5;
   font-family: Tahoma;
