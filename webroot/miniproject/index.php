@@ -36,14 +36,15 @@
         <h2>About me</h2>
         <ul>
           <li>Welcome to my portfolio. My name is Hasibullah Ghulamhaidar and I am a first year student.</li>
-          <li>I am currently studying at Queen Mary. I am studying for a Bachelor of Science degree in Computer Science. I plan to take a masters degree once I graduate.</li>
+          <li>I'm currently studying at Queen Mary. I'm studying for a Bachelor of Science degree in Computer Science.</li>
+          <li>Following graduation, I plan to take a masters degree before starting work to increase my knowledge.</li>
           <li>I am passionate about computers and enjoy learning more during my free time in addition to my lectures and labs at Queen Mary.</li>
           <li>I enjoy looking at articles relating to Technology and Computer Science, primarily about Cryptocurrency and state-of-the-art tech.</li>
           <li>I have many hobbies outside education, I enjoy sports, especially American Football and Basketball.</li>
           <li>I also enjoy playing video games whenever I am free, it also helps with my problem solving skills.</li>
         </ul><hr>
       </article>
-      <article>
+      <article class="info">
         <h2>My skills</h2>
         <ul>
           <li>Competent in <strong>Microsoft Office</strong> applications such as <strong>Word</strong> and <strong>Excel</strong>.</li>
