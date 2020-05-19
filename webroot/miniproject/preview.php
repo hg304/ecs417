@@ -43,7 +43,7 @@
         exit();
        }
 
-       $rows = mysqli_num_rows($res)
+       $rows = mysqli_num_rows($res);
 
       for ($i = $rows; $i > 0; $i--)
       {
