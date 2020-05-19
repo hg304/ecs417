@@ -32,7 +32,6 @@
     </ul>
   </nav>
 
-  <section>
     <section id="left">
       <article class="info">
         <h2>About me</h2>
@@ -42,6 +41,9 @@
           <li>I am passionate about computers enjoy learning more about computers during my free time in addition to my lectures and labs at Queen Mary.</li>
         </ul>
       </article>
+      <footer>
+        <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+      </footer>
     </section>
 
     <aside>
@@ -68,13 +70,4 @@
        ?>
      </article>
     </aside>
-  </section>
-
-
-  <section>
-    <footer>
-      <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-    </footer>
-  </section>
-
 </body>

@@ -32,7 +32,6 @@
     </ul>
   </nav>
 
-  <section>
     <section id="left">
       <figure id="pic">
         <img src="https://media.wsimag.com/attachments/7fa16d4e489e524267badc71bf916a5e68bec488/store/fill/1090/613/c1e83957fe71d36adeb4b070c1573135072a8b6331e18a2f5f7e163c769f/Venezuela-does-not-appear-in-the-Global-Teacher-Status.jpg">
@@ -49,6 +48,9 @@
           <li>Passed 2 A-Levels</li>
         </ul><hr>
       </article>
+      <footer>
+        <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+      </footer>
     </section>
 
     <aside>
@@ -74,12 +76,5 @@
         }
        ?>
      </aside>
-   </section>
-
-   <section class="bottom">
-     <footer>
-       <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-     </footer>
-   </section>
 
  </body>

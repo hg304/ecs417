@@ -50,6 +50,9 @@
           <li>There is also an admin section where you can add your own questions into the quiz</li>
         </ul>
       </article>
+      <footer>
+        <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+      </footer>
     </section>
 
     <aside>
@@ -76,10 +79,3 @@
        ?>
      </article>
      </aside>
-   </section>
-
-   <section class="bottom">
-     <footer>
-       <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-     </footer>
-   </section>
