@@ -32,46 +32,51 @@
     </ul>
   </nav>
 
-  <section id="left">
-    <article class="info">
-      <h2>My skills</h2><br>
-      <ul>
-        <li>Competent in <strong>Microsoft Office</strong> applications such as <strong>Word</strong> and <strong>Excel</strong>.</li>
-        <li>Experienced in working with operating systems, with high proficiency in <strong>Windows XP</strong>, <strong>Vista</strong>, <strong>7</strong> and <strong>10</strong> environments.</li>
-        <li>Know <strong>Python</strong>, <strong>Visual Basic</strong> and <strong>Java</strong> programming languages as well as <strong>PHP</strong>, <strong>JavaScript</strong> and <strong>HTML</strong>.</li>
-        <li>I am <strong>flexible</strong>, so I can perform tasks given to me at <strong>any time</strong></li>
-        <li>Able to get work done <strong>on time</strong> and <strong>meet deadlines</strong>.</li>
-      </ul>
-    </article>
-    <footer>
-      <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-    </footer>
-  </section>
+  <section>
+    <section id="left">
+      <article class="info">
+        <h2>My skills</h2><br>
+        <ul>
+          <li>Competent in <strong>Microsoft Office</strong> applications such as <strong>Word</strong> and <strong>Excel</strong>.</li>
+          <li>Experienced in working with operating systems, with high proficiency in <strong>Windows XP</strong>, <strong>Vista</strong>, <strong>7</strong> and <strong>10</strong> environments.</li>
+          <li>Know <strong>Python</strong>, <strong>Visual Basic</strong> and <strong>Java</strong> programming languages as well as <strong>PHP</strong>, <strong>JavaScript</strong> and <strong>HTML</strong>.</li>
+          <li>I am <strong>flexible</strong>, so I can perform tasks given to me at <strong>any time</strong></li>
+          <li>Able to get work done <strong>on time</strong> and <strong>meet deadlines</strong>.</li>
+        </ul>
+      </article>
+    </section>
 
-  <aside>
-    <article>
-    <?php
-      session_start();
-      if (!isset($_SESSION["firstname"]) || empty($_SESSION["firstname"]))
-      {
-        echo "<p style='font-family: Tahoma float: right;'><strong>Not logged in</strong></p>";
-        echo "<form id='enter' method='POST' action='login.php'>";
-    		echo "<fieldset style='background-color: #3176f5; font-family: Tahoma; color: white;'>";
-        echo       "<label for='email'>Email:</label><br>";
-        echo       "<input type='text' id='email' name='email'>";
-        echo       "<br><label for='password'>Password:</label><br>";
-        echo       "<input type='password' id='password' name='password'>";
-        echo       "<br><br><button type='submit' name='submit' value='submit'>Submit</button>";
-    	  echo "</fieldset>";
-        echo "</form>";
-      }
-      else
-      {
-        echo "<p><strong>Welcome ", $_SESSION["firstname"], "</strong></p>";
-      }
-     ?>
-   </article>
-   </aside>
+    <aside>
+      <article>
+      <?php
+        session_start();
+        if (!isset($_SESSION["firstname"]) || empty($_SESSION["firstname"]))
+        {
+          echo "<p style='font-family: Tahoma float: right;'><strong>Not logged in</strong></p>";
+          echo "<form id='enter' method='POST' action='login.php'>";
+      		echo "<fieldset style='background-color: #3176f5; font-family: Tahoma; color: white;'>";
+          echo       "<label for='email'>Email:</label><br>";
+          echo       "<input type='text' id='email' name='email'>";
+          echo       "<br><label for='password'>Password:</label><br>";
+          echo       "<input type='password' id='password' name='password'>";
+          echo       "<br><br><button type='submit' name='submit' value='submit'>Submit</button>";
+      	  echo "</fieldset>";
+          echo "</form>";
+        }
+        else
+        {
+          echo "<p><strong>Welcome ", $_SESSION["firstname"], "</strong></p>";
+        }
+       ?>
+     </article>
+     </aside>
+   </section>
+
+   <section>
+     <footer>
+       <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+     </footer>
+   </section>
 
 
  </body>

@@ -77,9 +77,11 @@ if (isset($_POST["submit"]))
           </section>
         </article>
 
-        <footer>
-          <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-        </footer>
+        <section>
+          <footer>
+            <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+          </footer>
+        </section>
 <?php
   }
 }

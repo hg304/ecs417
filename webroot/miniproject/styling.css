@@ -21,8 +21,8 @@ header {
 
 footer {
   position: fixed;
-  left: 0;
-  bottom: 0;
+  padding:5px 3px;
+  overflow: hidden;
   background-color: #3176f5;
   font-family: Tahoma;
   color: white;
