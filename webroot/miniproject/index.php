@@ -41,6 +41,9 @@
         <li>I am passionate about computers enjoy learning more about computers during my free time in addition to my lectures and labs at Queen Mary.</li>
       </ul>
     </article>
+    <footer>
+      <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+    </footer>
   </section>
 
   <aside>
@@ -67,9 +70,5 @@
      ?>
    </article>
   </aside>
-
-  <footer>
-    <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-  </footer>
 
 </body>
