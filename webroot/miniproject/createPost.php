@@ -30,7 +30,7 @@ session_start();
           <input type="text" id="title" placeholder="Title" name="title" <?php echo "value=", $_SESSION["title"]?>><br><br>
           <input type="text" id="description" placeholder="Write anything here" name="description" <?php echo "value=", $_SESSION["description"]?>>
           <br><br><button type="button" name="submit" onclick="checkempty()" value="submit">Submit</button>
-          <button type="button" name="preview" onclick="checkempty()" value="submit">Preview</button>
+          <button type="button" name="preview" onclick="checkempty()" value="preview">Preview</button>
           <button type="button" onclick="resetText()" value="reset">Clear</button>
           <script>
               function resetText()

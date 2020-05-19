@@ -20,7 +20,7 @@ if (isset($_POST["preview"]))
 
   header("Location:preview.php");
 }
-else
+else if (isset($_POST["submit"]))
 {
   $title = $_POST["title"];
   $description = $_POST["description"];
