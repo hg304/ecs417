@@ -24,12 +24,12 @@
 
   <section class="topme">
     <article class="add">
-      <button type="button" onclick="location.href='addPost.html'">Add post</button>
+      <button type="button" onclick="location.href='createPost.php'">Add post</button>
     </article>
     <article class="search">
       <form id="monthpick" method="POST" action="viewBlog.php">
         <label for="months">Select month</label>
-        <select id="months">
+        <select name="months" id="months">
           <option value="1">January</option>
           <option value="2">February</option>
           <option value="3">March</option>
@@ -55,20 +55,19 @@
 
       $month = $_POST["months"];
 
-      $res = mysqli_query($conn, "SELECT * FROM BLOG;");
-      if (!$res)
-       {
-        printf("Error: %s\n", mysqli_error($conn));
-        exit();
-       }
-
-       $rows = mysqli_num_rows($res);
-
       if (!empty($month))
       {
+        $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = '$month';");
+        if (!$res)
+         {
+          printf("Error: %s\n", mysqli_error($conn));
+          exit();
+         }
+
+         $rows = mysqli_num_rows($res)
          for ($i = $rows; $i > 0; $i--)
          {
-           $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i' AND MONTH(datepost) = '$month'");
+           $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = '$month';");
            if (!$res2)
             {
              printf("Error: %s\n", mysqli_error($conn));
