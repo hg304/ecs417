@@ -53,9 +53,6 @@
           <li>Liaised with wholesalers so we could buy products to sell in our stall and managed our budget</li>
         </ul>
       </article>
-      <footer>
-        <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-      </footer>
     </section>
 
     <aside>
@@ -81,4 +78,7 @@
         }
        ?>
       </article>
+      <footer>
+        <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+      </footer>
      </aside>

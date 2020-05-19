@@ -42,7 +42,7 @@
     </article>
   </section>
 
-  <aside style="float: right; padding: 10px; width: 15%">
+  <aside>
     <article>
     <?php
       session_start();
@@ -65,4 +65,7 @@
       }
      ?>
    </article>
+   <footer>
+     <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+   </footer>
    </aside>

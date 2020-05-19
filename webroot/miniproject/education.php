@@ -48,9 +48,6 @@
           <li>Passed 2 A-Levels</li>
         </ul><hr>
       </article>
-      <footer>
-        <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
-      </footer>
     </section>
 
     <aside>
@@ -75,6 +72,9 @@
           echo "<p><strong>Welcome ", $_SESSION["firstname"], "</strong></p>";
         }
        ?>
+       <footer>
+         <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
+       </footer>
      </aside>
 
  </body>

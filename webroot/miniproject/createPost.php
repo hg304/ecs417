@@ -25,11 +25,11 @@ session_start();
   </nav>
 
   <br><br><section>
-    <form id="enter" method="POST" action="addPost.php">
+    <form id="enter" name="enter" method="POST" action="addPost.php">
     <fieldset class="blog">
           <input type="text" id="title" placeholder="Title" name="title" <?php echo "value=", $_SESSION["title"]?>><br><br>
           <input type="text" id="description" placeholder="Write anything here" name="description" <?php echo "value=", $_SESSION["description"]?>>
-          <br><br><button type="button" name="submit" onclick="checkemptysub()" value="submit">Submit</button>
+          <br><br><button type="button" name="submit" onclick="checkempty()" value="submit">Submit</button>
           <button type="submit" name="submit" formaction="addPreview.php" value="submit">Preview</button>
           <button type="button" onclick="resetText()" value="reset">Clear</button>
           <script>
@@ -42,7 +42,7 @@ session_start();
                 }
               }
 
-              function checkemptysub()
+              function checkempty()
               {
                 var form = document.getElementById("enter");
                 var title = document.getElementById("title");
