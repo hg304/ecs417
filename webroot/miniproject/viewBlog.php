@@ -60,7 +60,8 @@
         exit();
        }
 
-       $rows = mysqli_num_rows($res)
+       $rows = mysqli_num_rows($res);
+
        for ($i = $rows; $i > 0; $i--)
        {
          $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i';");
