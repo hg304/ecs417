@@ -32,7 +32,7 @@
     </ul>
   </nav>
 
-  <section>
+
     <section id="left">
       <article class="info">
         <h2>My skills</h2><br>

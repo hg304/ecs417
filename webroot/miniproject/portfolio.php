@@ -32,7 +32,6 @@
     </ul>
   </nav>
 
-  <section>
     <section id="left">
       <article class="info">
         <h2>Projects that I created</h2><br>

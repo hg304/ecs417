@@ -32,7 +32,6 @@
     </ul>
   </nav>
 
-  <section>
     <section id="left">
       <figure id="pic">
         <img src="https://www.andiamo.co.uk/wp-content/uploads/2018/08/work_experience.jpg">
