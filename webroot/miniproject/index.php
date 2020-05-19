@@ -12,7 +12,6 @@
   <nav class="navmenu">
     <ul>
       <li><a href=#>About me</a></li>
-      <li><a href="skills.php">Skills and achievements</a></li>
       <li><a href="education.php">Education</a></li>
       <li><a href="experience.php">Experience</a></li>
       <li><a href="portfolio.php">Portfolio</a></li>
@@ -38,7 +37,20 @@
         <ul>
           <li>Welcome to my portfolio. My name is Hasibullah Ghulamhaidar and I am a first year student.</li>
           <li>I am currently studying at Queen Mary. I am studying for a Bachelor of Science degree in Computer Science. I plan to take a masters degree once I graduate.</li>
-          <li>I am passionate about computers enjoy learning more about computers during my free time in addition to my lectures and labs at Queen Mary.</li>
+          <li>I am passionate about computers and enjoy learning more during my free time in addition to my lectures and labs at Queen Mary.</li>
+          <li>I enjoy looking at articles relating to Technology and Computer Science, primarily about Cryptocurrency and state-of-the-art tech.</li>
+          <li>I have many hobbies outside education, I enjoy sports, especially American Football and Basketball.</li>
+          <li>I also enjoy playing video games whenever I am free, it also helps with my problem solving skills.</li>
+        </ul><hr>
+      </article>
+      <article>
+        <h2>My skills</h2>
+        <ul>
+          <li>Competent in <strong>Microsoft Office</strong> applications such as <strong>Word</strong> and <strong>Excel</strong>.</li>
+          <li>Experienced in working with operating systems, with high proficiency in <strong>Windows XP</strong>, <strong>Vista</strong>, <strong>7</strong> and <strong>10</strong> environments.</li>
+          <li>Know <strong>Python</strong>, <strong>Visual Basic</strong> and <strong>Java</strong> programming languages as well as <strong>PHP</strong>, <strong>JavaScript</strong> and <strong>HTML</strong>.</li>
+          <li>I am <strong>flexible</strong>, so I can perform tasks given to me at <strong>any time</strong></li>
+          <li>Able to get work done <strong>on time</strong> and <strong>meet deadlines</strong>.</li>
         </ul>
       </article>
     </section>

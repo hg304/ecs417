@@ -12,7 +12,6 @@
   <nav class="navmenu">
     <ul>
       <li><a href="index.php">About me</a></li>
-      <li><a href="skills.php">Skills and achievements</a></li>
       <li><a href="education.php">Education</a></li>
       <li><a href="experience.php">Experience</a></li>
       <li><a href=#>Portfolio</a></li>
