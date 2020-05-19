@@ -51,6 +51,7 @@
           <li>Experienced in working with operating systems, with high proficiency in <strong>Windows XP</strong>, <strong>Vista</strong>, <strong>7</strong> and <strong>10</strong> environments.</li>
           <li>Know <strong>Python</strong>, <strong>Visual Basic</strong> and <strong>Java</strong> programming languages as well as <strong>PHP</strong>, <strong>JavaScript</strong> and <strong>HTML</strong>.</li>
           <li>I am <strong>flexible</strong>, so I can perform tasks given to me at <strong>any time</strong></li>
+          <li>Multilingual in various languages and can read English, Arabic and Cyrillic scripts.</li> 
           <li>Able to get work done <strong>on time</strong> and <strong>meet deadlines</strong>.</li>
         </ul>
       </article>
