@@ -31,7 +31,10 @@
           <script>
               function resetText()
               {
-                document.getElementById("enter").reset();
+                if (confirm("Do you wish to clear everything that you have written?"))
+                {
+                  document.getElementById("enter").reset();
+                }
               }
 
               function checkempty()
