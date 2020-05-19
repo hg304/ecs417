@@ -3,10 +3,10 @@
 include("config.php");
 session_start();
 
-if (isset($_POST["submit"]))
+if (isset($_GET["submit"]))
 {
-  $email = $_POST["email"];
-  $password = $_POST["password"];
+  $email = $_GET["email"];
+  $password = $_GET["password"];
 
   $res = mysqli_query($conn, "SELECT * FROM USERS WHERE email = '$email' AND password = '$password';");
   if (!$res)
@@ -58,7 +58,7 @@ if (isset($_POST["submit"]))
           </section>
 
           <br><br><section>
-            <form id="enter" method="POST" action="login.php">
+            <form id="enter" method="GET" action="login.php">
         		<fieldset class="box">
                   <label for="email">Email:</label><br>
                   <input type="text" id="email" name="email">

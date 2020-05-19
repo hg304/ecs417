@@ -56,7 +56,7 @@
         if (!isset($_SESSION["firstname"]) || empty($_SESSION["firstname"]))
         {
           echo "<p style='font-family: Tahoma float: right;'><strong>Not logged in</strong></p>";
-          echo "<form id='enter' method='POST' action='login.php'>";
+          echo "<form id='enter' method='GET' action='login.php'>";
       		echo "<fieldset style='background-color: #3176f5; font-family: Tahoma; color: white;'>";
           echo       "<label for='email'>Email:</label><br>";
           echo       "<input type='text' id='email' name='email'>";
