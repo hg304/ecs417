@@ -19,12 +19,9 @@ header {
   float: right;
 }
 
-.bottom {
-  position: relative;
-  bottom:0;
-}
 
 footer {
+  position: static;
   padding:5px, 3px;
   background-color: #3176f5;
   color: white;
