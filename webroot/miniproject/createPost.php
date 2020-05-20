@@ -28,8 +28,8 @@ session_start();
     <fieldset class="blog">
           <input type="text" id="title" placeholder="Title" name="title" <?php echo "value=", $_SESSION["title"]?>><br><br>
           <textarea id="description" name="description" placeholder="Write anything here" <?php echo "value=", $_SESSION["description"]?>></textarea>
-          <br><br><button type="button" name="submit" onclick="checkempty(this.form, '_submit')" value="submit">Submit</button>
-          <button type="button" name="preview" onclick="checkempty(this.form, '_preview'" value="preview">Preview</button>
+          <br><br><button type="button" name="submit" onclick="checkempty(1)" value="submit">Submit</button>
+          <button type="button" name="preview" onclick="checkempty(2)" value="preview">Preview</button>
           <button type="button" onclick="resetText()" value="reset">Clear</button>
           <script>
 
@@ -41,15 +41,22 @@ session_start();
                 }
               }
 
-              function checkempty(form, button)
+              function checkempty(number)
               {
-                document.enter.target = button;
+                if (number == 1)
+                {
+                  document.enter.action = "addPost.php";
+                }
+                else if (number == 2)
+                {
+                  document.enter.action = "preview.php";
+                }
                 var title = document.getElementById("title");
                 var desc = document.getElementById("description");
 
                 if (title.value.length > 0 && desc.value.length > 0)
                 {
-                  form.submit();
+                  document.enter.submit();
                 }
                 else
                 {
