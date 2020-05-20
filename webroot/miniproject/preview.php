@@ -20,7 +20,7 @@
   <section class="topme">
     <article class="add">
       <p>The first post shown is the post you are currently previewing. Do you wish to upload this></p><br>
-      <button type="button" onclick="location.href='viewBlog.php'">Send</button>
+      <button type="button" onclick="location.href='addPost.php'">Send</button>
       <button type="button" onclick="location.href='createPost.php'">Go back</button>
     </article>
   </section><br>
@@ -30,9 +30,12 @@
     <article class="blogbox">
 
     <?php
-      $title = $_GET["title"];
-      $description = $_GET["description"];
-      echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $title, "</h3><p><style='color: white; font-family: Tahoma;'>", $description, "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A"), "</small></p><hr>";
+      session_start();
+      $_SESSION["title"] = $_POST["title"];
+      $_SESSION["description"] = $_POST["description"];
+      $_SESSION["time"] = new DateTime();
+
+      echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $_SESSION["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $_SESSION["description"], "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", strtotime($_SESSION["time"])), "</small></p><hr>";
       include("config.php");
 
       $res = mysqli_query($conn, "SELECT * FROM BLOG;");
