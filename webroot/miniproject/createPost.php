@@ -44,6 +44,7 @@ session_start();
               {
                 var title = document.getElementById("title");
                 var desc = document.getElementById("description");
+                var form = document.getElementById("enter");
 
                 if (title.value.length == 0 || desc.value.length == 0)
                 {
@@ -66,7 +67,11 @@ session_start();
                   }
 
                   e.preventDefault();
-                }
+                 }
+                 else
+                 {
+                   form.submit();
+                 }
 
                }
 
