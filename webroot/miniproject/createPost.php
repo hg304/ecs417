@@ -1,13 +1,11 @@
-<?php
-session_start();
-?>
+
 <html>
 <head>
   <title>Make a post</title>
   <link rel="stylesheet" type="text/css" href="styling.css">
 </head>
 
-<body>
+<body onload="restoretext()">
   <header>
     <h2>My blog</h2>
   </header>
@@ -40,6 +38,8 @@ session_start();
                   document.getElementById("enter").reset();
                 }
               }
+
+
 
                 var title = document.getElementById("title");
                 var desc = document.getElementById("description");
@@ -91,6 +91,22 @@ session_start();
                     e.preventDefault();
                   }
                 }, false);
+
+                function restoretext()
+                {
+                  <?php
+                  session_start();
+                   ?>
+
+                  var title_val = <?php echo json_encode($_SESSION["title"], JSON_HEX_TAG);?>;
+                  var desc_val = <?php echo json_encode($_SESSION["description"], JSON_HEX_TAG);?>;
+                  title.value = title_val;
+                  desc.value = desc_val;
+
+                  <?php
+                    session_destroy();
+                  ?>
+                }
 
           </script>
     </<fieldset>
