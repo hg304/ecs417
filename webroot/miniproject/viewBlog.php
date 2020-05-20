@@ -106,7 +106,7 @@
             }
             else
             {
-              echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $result["description"], "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), " UTC</small></p><hr>";
+              echo "<h3 class='blogtext'>", $result["title"], "</h3><p class='blogbox'>", $result["description"], "</p><p class='blogtext'><br><small>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), " UTC</small></p><hr>";
             }
           }
        }

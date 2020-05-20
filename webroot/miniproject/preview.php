@@ -58,7 +58,7 @@
 
          $result = mysqli_fetch_array($res2);
 
-         echo "<h3 class='blogtext'>", $result["title"], "</h3><p class='blogtext'>", $result["description"], "</p><p class='blogtext'><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), " UTC</small></p><hr>";
+         echo "<h3 class='blogtext'>", $result["title"], "</h3><p class='blogtext'>", $result["description"], "</p><p class='blogtext'><br><small>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), " UTC</small></p><hr>";
         }
      ?>
    </article>
