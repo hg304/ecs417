@@ -42,12 +42,12 @@ aside {
   padding: 10px;
 }
 
-#left .info h2, h3, p, pre, li {
+#left .info {
   font-family: Tahoma;
   text-align: left;
 }
 
-#left .contact h4, p, h3, h2, a{
+#left .contact{
   font-family: Tahoma;
 }
 
@@ -57,8 +57,7 @@ aside {
 }
 
 .blogtext h3 {
-  float:right;
-  text-align: right;
+
 }
 
 img {
