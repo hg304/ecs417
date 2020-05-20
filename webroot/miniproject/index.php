@@ -55,7 +55,7 @@
           <li><strong>Multilingual</strong> in various languages and can read <strong>English</strong>, <strong>Arabic</strong> and <strong>Cyrillic</strong> scripts.</li>
           <li>Able to get work done <strong>on time</strong> and <strong>meet deadlines</strong>.</li>
           <li>I am a <strong>team player</strong>, I <strong>work well</strong> with <strong>others</strong> in teams and I frequently <strong>contribute</strong> to solutions.</li>
-          <li>Able to <strong>communicate well</strong> with others via <strong>phone</strong> and <strong>face-to-face</strong>, given my experience with volunteering and previous work experience.</li>
+          <li>Ablity to <strong>communicate</strong> with others via <strong>phone</strong> and <strong>face-to-face</strong>, given my experience with volunteering and previous jobs.</li>
         </ul>
       </article>
     </section>

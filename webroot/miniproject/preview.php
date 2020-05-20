@@ -1,14 +1,10 @@
 <html>
 <head>
-  <title>My blog</title>
+  <title>Preview</title>
   <link rel="stylesheet" type="text/css" href="styling.css">
 </head>
 
 <body>
-  <header>
-    <h2>My blog</h2>
-  </header>
-
   <nav class="navmenu">
     <ul>
       <li><a href="index.php">About me</a></li>
