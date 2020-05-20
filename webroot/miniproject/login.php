@@ -27,7 +27,8 @@ if (isset($_GET["submit"]))
       $_SESSION["error"] = "Invalid email or password";?>
       <html>
       <head>
-        <title>Homepage</title>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="styling.css">
       </head>
 

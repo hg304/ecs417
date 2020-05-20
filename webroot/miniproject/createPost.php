@@ -3,7 +3,8 @@ session_start();
 ?>
 <html>
 <head>
-  <title>Homepage</title>
+  <title>Make a post</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="styling.css">
 </head>
 
@@ -91,7 +92,7 @@ session_start();
                     e.preventDefault();
                   }
                 }, false);
-                
+
           </script>
     </<fieldset>
    </form>

@@ -1,6 +1,7 @@
 <html>
 <head>
-  <title>Homepage</title>
+  <title>Experience</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="styling.css">
 </head>
 
