@@ -33,7 +33,7 @@
       session_start();
       $_SESSION["title"] = $_POST["title"];
       $_SESSION["description"] = $_POST["description"];
-      $_SESSION["time"] = new Date();
+      $_SESSION["time"] = now();
 
       echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $_SESSION["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $_SESSION["description"], "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", $_SESSION["time"]), "</small></p><hr>";
       include("config.php");
