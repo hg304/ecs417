@@ -61,7 +61,7 @@ if (isset($_GET["submit"]))
             <form id="enter" method="GET" action="login.php">
         		<fieldset class="box">
                   <label for="email">Email:</label><br>
-                  <input type="email" id="email" name="email">
+                  <input type="email" id="email" placeholder="example@example.com" name="email">
                   <br><br><label for="password">Password:</label><br>
                   <input type="password" id="password" name="password">
                   <br><br><button type="submit" name="submit" value="submit">Submit</button>

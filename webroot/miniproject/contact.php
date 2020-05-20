@@ -55,7 +55,7 @@
         echo "<form id='enter' method='GET' action='login.php'>";
     		echo "<fieldset style='background-color: #3176f5; font-family: Tahoma; color: white;'>";
         echo       "<label for='email'>Email:</label><br>";
-        echo       "<input type='email' id='email' name='email'>";
+        echo       "<input type='email' id='email' placeholder='example@example.com' name='email'>";
         echo       "<br><label for='password'>Password:</label><br>";
         echo       "<input type='password' id='password' name='password'>";
         echo       "<br><br><button class='blue' type='submit' name='submit' value='submit'>Submit</button>";
