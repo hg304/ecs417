@@ -112,12 +112,15 @@ figcaption {
 
 .blogbox
 {
-  margin: auto;
   background-color: #3176f5;
   text-align: center;
   color: white;
   font-family: Tahoma;
   overflow: hidden;
+}
+
+.blogbox h3 {
+  float: right;
 }
 
 
