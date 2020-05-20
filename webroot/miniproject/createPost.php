@@ -101,9 +101,19 @@
                   var title_val = <?php echo json_encode($_SESSION["title"], JSON_HEX_TAG);?>;
                   var desc_val = <?php echo json_encode($_SESSION["description"], JSON_HEX_TAG);?>;
                   title.value = title_val;
-                  desc.value = desc_val;
+                  if (desc_val == null)
+                  {
+                    desc.value = "";
+                  }
+                  else
+                  {
+                    desc.value = desc_val;
+                  }
+
 
                   <?php
+                    unset($_SESSION["title"]);
+                    unset($_SESSION["description"]);
                     session_destroy();
                   ?>
                 }
