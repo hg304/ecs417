@@ -42,6 +42,7 @@
           <li>I enjoy looking at articles relating to Technology and Computer Science, primarily about Cryptocurrency and state-of-the-art tech.</li>
           <li>I have many hobbies outside education, I enjoy sports, especially American Football and Basketball.</li>
           <li>I also enjoy playing video games whenever I am free, it also helps with my problem solving skills.</li>
+          <li>I enjoy volunteering and have volunteered for many things, some include teaching young kids sports as well as performing charity work.<li>
         </ul><hr>
       </article>
       <article class="info">
@@ -51,8 +52,10 @@
           <li>Experienced in working with operating systems, with high proficiency in <strong>Windows XP</strong>, <strong>Vista</strong>, <strong>7</strong> and <strong>10</strong> environments.</li>
           <li>Know <strong>Python</strong>, <strong>Visual Basic</strong> and <strong>Java</strong> programming languages as well as <strong>PHP</strong>, <strong>JavaScript</strong> and <strong>HTML</strong>.</li>
           <li>I am <strong>flexible</strong>, so I can perform tasks given to me at <strong>any time</strong></li>
-          <li>Multilingual in various languages and can read English, Arabic and Cyrillic scripts.</li> 
+          <li><strong>Multilingual</strong> in various languages and can read <strong>English</strong>, <strong>Arabic</strong> and <strong>Cyrillic</strong> scripts.</li>
           <li>Able to get work done <strong>on time</strong> and <strong>meet deadlines</strong>.</li>
+          <li>I am a <strong>team player</strong>, I <strong>work well</strong> with <strong>others</strong> in teams and I frequently <strong>contribute</strong> to solutions.</li>
+          <li>I am able to <strong>communicate well</strong> with others <strong>face-to-face</strong> and <strong>through the phone</strong>, given my experience with volunteering and previous work experience.</li>
         </ul>
       </article>
     </section>
