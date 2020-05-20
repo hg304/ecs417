@@ -82,7 +82,7 @@
          $month = $_POST["months"];
           for ($i = $rows; $i > 0; $i--)
           {
-            $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i' AND MONTH(postdate) = '$month';");
+            $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i' AND MONTH(datepost) = '$month';");
             if (!$res2)
              {
               printf("Error: %s\n", mysqli_error($conn));
