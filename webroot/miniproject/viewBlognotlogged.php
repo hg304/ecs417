@@ -23,7 +23,7 @@
 
   <section class="topme">
     <article class="add">
-      <button type='button' onclick="location.href='login.html'">Add post</button>
+      <button type='button' onclick="location.href='login.html'">Login to add posts</button>
     </article>
     <article class="search">
       <form id="monthpick" method="POST" action="viewBlog.php">

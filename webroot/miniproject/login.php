@@ -20,7 +20,7 @@ if (isset($_GET["submit"]))
   if ($result)
   {
     $_SESSION["firstname"] = $result["firstName"];
-    header('Location:viewBlog.php');
+    header('Location:viewBloglogged.php');
   }
   else
   {
