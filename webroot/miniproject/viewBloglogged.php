@@ -30,18 +30,7 @@
 
   <section class="topme">
     <article class="add">
-      <?php
-        session_start();
-        if (!isset($_SESSION["firstname"]) || empty($_SESSION["firstname"]))
-        {
-          echo "<button type='button' onclick='", header("Location:login.html")"'>Log in to add posts</button>";
-        }
-        else
-        {
-          echo "<button type='button' onclick='", header("Location:createPost.html")"'>Add post</button>";
-        }
-      ?>
-
+      <button type='button' onclick="location.href='makePost.html'">Add post</button>
     </article>
     <article class="search">
       <form id="monthpick" method="POST" action="viewBlog.php">

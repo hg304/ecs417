@@ -20,11 +20,11 @@
         session_start();
         if (!isset($_SESSION["firstname"]) || empty($_SESSION["firstname"]))
         {
-          echo "<li><a href='viewBlog.php'>Blog</a></li>";
+          echo "<li><a href='viewBlognotlogged.php'>Blog</a></li>";
         }
         else
         {
-          echo "<li><a href='viewBlog.php'>Blog</a></li>";
+          echo "<li><a href='viewBloglogged.php'>Blog</a></li>";
           echo "<li><a href='logout.php'>Log Out</a></li>";
         }
       ?>
