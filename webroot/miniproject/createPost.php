@@ -114,7 +114,6 @@
                   <?php
                     unset($_SESSION["title"]);
                     unset($_SESSION["description"]);
-                    session_destroy();
                   ?>
                 }
 
