@@ -64,7 +64,7 @@
       </form>
   </section><br>
 
-  <section class="blogsection">
+  <section>
     <h2 style="font-family: Tahoma;">Recent blog posts:</h2>
     <article class="blogbox">
     <?php
