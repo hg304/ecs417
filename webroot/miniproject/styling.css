@@ -142,7 +142,7 @@ textarea
   font-family: Tahoma;
 }
 
-button
+.blue
 {
   background-color: #2761cc;
   color: white;
@@ -150,6 +150,12 @@ button
   display: inline-block;
   text-align: center;
   padding: 10px 20px;
+}
+
+.social
+{
+  width: 150px;
+  height: 150px;
 }
 
 button:hover

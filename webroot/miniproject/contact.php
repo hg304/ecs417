@@ -40,8 +40,8 @@
       <p>E-mail address:<br>hasib78680@gmail.com</p>
       <p>Mobile number:<br>07497479859</p>
       <h4>My Socials</h4>
-      <button type="button" class="social" onclick="location.href:https://www.facebook.com/imsosickatgaming" ><img src="https://www.facebook.com/images/fb_icon_325x325.png"></button>
-      <button type="button" class="social" onclick="location.href:https://uk.linkedin.com/in/hasibullah-ghulamhaidar-231953197" ><img style="width: 325px; height: 325px;" src="https://nextforme.com/wp-content/uploads/2018/11/linkedin-logo.png"></button>
+      <button type="button" class="social" onclick="location.href:https://www.facebook.com/imsosickatgaming" ><img class="social" src="https://www.facebook.com/images/fb_icon_325x325.png"></button>
+      <button type="button" class="social"><a href="https://uk.linkedin.com/in/hasibullah-ghulamhaidar-231953197"><img class="social" src="https://nextforme.com/wp-content/uploads/2018/11/linkedin-logo.png"></img></button>
     </article>
   </section>
 
@@ -58,7 +58,7 @@
         echo       "<input type='text' id='email' name='email'>";
         echo       "<br><label for='password'>Password:</label><br>";
         echo       "<input type='password' id='password' name='password'>";
-        echo       "<br><br><button type='submit' name='submit' value='submit'>Submit</button>";
+        echo       "<br><br><button class='blue' type='submit' name='submit' value='submit'>Submit</button>";
     	  echo "</fieldset>";
         echo "</form>";
       }

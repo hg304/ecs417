@@ -67,7 +67,7 @@
           echo       "<input type='text' id='email' name='email'>";
           echo       "<br><label for='password'>Password:</label><br>";
           echo       "<input type='password' id='password' name='password'>";
-          echo       "<br><br><button type='submit' name='submit' value='submit'>Submit</button>";
+          echo       "<br><br><button type='submit' class='blue' name='submit' value='submit'>Submit</button>";
       	  echo "</fieldset>";
           echo "</form>";
         }
