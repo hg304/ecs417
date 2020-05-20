@@ -1,4 +1,5 @@
 <?php
+  include("config.php");
 
   $title = $_POST["title"];
   $description = $_POST["description"];
