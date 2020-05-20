@@ -32,7 +32,7 @@
     <article class="add">
       <?php
         session_start();
-        if (isset($_SESSION["firstname"]) || (!empty($_SESSION["firstname"])))
+        if (!isset($_SESSION["firstname"]) || !empty($_SESSION["firstname"]))
         {
           echo "<button type='button' onclick='location.href='login.html''>Log in to add posts</button>";
         }
