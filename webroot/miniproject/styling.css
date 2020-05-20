@@ -136,9 +136,9 @@ hr
   width: 500px;
 }
 
-#description
+textarea
 {
-  height: 150px;
+  height: 250px;
   font-family: Tahoma;
 }
 
