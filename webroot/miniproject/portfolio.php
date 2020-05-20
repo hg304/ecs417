@@ -1,12 +1,12 @@
 <html>
 <head>
-  <title>Homepage</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" type="text/css" href="styling.css">
 </head>
 
 <body>
   <header>
-    <h2>My homepage</h2>
+    <h2>My portfolio</h2>
   </header>
 
   <nav class="navmenu">

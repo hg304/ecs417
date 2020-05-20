@@ -44,13 +44,8 @@ session_start();
               {
                 var title = document.getElementById("title");
                 var desc = document.getElementById("description");
-                var form = document.getElementById("enter");
 
-                if (title.value.length > 0 && desc.value.length > 0)
-                {
-                  form.submit();
-                }
-                else
+                if (title.value.length == 0 || desc.value.length == 0)
                 {
                   alert("Both fields have not been filled in");
                   if (title.value.length == 0)
@@ -69,9 +64,11 @@ session_start();
                   {
                     desc.style.borderColor = "white";
                   }
+
                   e.preventDefault();
                 }
-              }
+
+               }
 
           </script>
     </<fieldset>
