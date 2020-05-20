@@ -10,7 +10,7 @@
 
    $position = mysqli_num_rows($res);
 
-  $res = mysqli_query($conn, "DELETE * FROM BLOG WHERE id = '$position';");
+  $res = mysqli_query($conn, "DELETE FROM BLOG WHERE id = '$position';");
   if (!$res)
    {
     printf("Error: %s\n", mysqli_error($conn));
