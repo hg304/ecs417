@@ -14,7 +14,7 @@
       exit();
     }
 
-    header("Location:viewBlog.php");
+    header("Location:viewBloglogged.php");
   }
   else
   {
@@ -28,7 +28,7 @@
       exit();
     }
 
-    header("Location:viewBlog.php");
+    header("Location:viewBloglogged.php");
   }
 
 ?>
