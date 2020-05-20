@@ -51,6 +51,11 @@ aside {
   font-family: Tahoma;
 }
 
+.blogtext {
+  font-family: Tahoma;
+  color: white;
+}
+
 img {
   width: 600px;
   height: 400px;
