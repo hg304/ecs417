@@ -4,8 +4,8 @@
   include("config.php");
   session_start();
 
-  $title = $_POST["title"];
-  $description = $_POST["description"];
+  $title = $_GET["title"];
+  $description = $_GET["description"];
 
   $_SESSION["title"] = $title;
   $_SESSION["description"] = $description;

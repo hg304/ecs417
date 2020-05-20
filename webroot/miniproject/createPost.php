@@ -24,7 +24,7 @@ session_start();
   </nav>
 
   <br><br><section>
-    <form id="enter" name="enter" method="POST" action="addPost.php">
+    <form id="enter" name="enter" method="GET" action="addPost.php">
     <fieldset class="blog">
           <input type="text" id="title" placeholder="Title" name="title" <?php echo "value=", $_SESSION["title"]?>><br><br>
           <textarea id="description" name="description" placeholder="Write anything here" <?php echo "value=", $_SESSION["description"]?>></textarea>
