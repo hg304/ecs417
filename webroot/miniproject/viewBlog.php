@@ -23,7 +23,7 @@
 
   <section class="topme">
     <article class="add">
-      <button type="button" onclick="location.href='createPost.php'">Add post</button>
+      <button type="button" class="blue" onclick="location.href='createPost.php'">Add post</button>
     </article>
     <article class="search">
       <form id="monthpick" method="POST" action="viewBlog.php">
@@ -42,7 +42,7 @@
           <option value="11">November</option>
           <option value="12">December</option>
         </select>
-        <button type="submit" value="submit">Search</button>
+        <button type="submit" class="blue" value="submit">Search</button>
       </form>
   </section><br>
 
