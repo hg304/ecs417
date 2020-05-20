@@ -35,9 +35,13 @@
     <article class="info">
       <h2>Contact details</h2>
       <h3>You can contact me with the following:</h3>
-      <p>Mailing address:<br>38 Cobham Close<br>Edgware<br>Middlesex<br>HA8 5QG</p>
+      <p>Mailing address:</p>
+      <p>38 Cobham Close<br>Edgware<br>Middlesex<br>HA8 5QG</p>
       <p>E-mail address:<br>hasib78680@gmail.com</p>
       <p>Mobile number:<br>07497479859</p>
+      <h4>My Socials</h4>
+      <button type="button" class="social" onclick="location.href:https://www.facebook.com/imsosickatgaming" ><img src="https://www.facebook.com/images/fb_icon_325x325.png"></button>
+      <button type="button" class="social" onclick="location.href:https://uk.linkedin.com/in/hasibullah-ghulamhaidar-231953197" ><img style="width: 325px; height: 325px;" src="https://nextforme.com/wp-content/uploads/2018/11/linkedin-logo.png"></button>
     </article>
   </section>
 
