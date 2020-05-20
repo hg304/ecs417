@@ -27,7 +27,7 @@ session_start();
     <form id="enter" name="enter" method="POST" action="addPost.php">
     <fieldset class="blog">
           <input type="text" id="title" placeholder="Title" name="title" <?php echo "value=", $_SESSION["title"]?>><br><br>
-          <textarea id="description" name="description" placeholder="Write anything here" <?php echo "value=", $_SESSION["description"]?>></textarea>
+          <input type="text" id="description" name="description" placeholder="Write anything here" <?php echo "value=", $_SESSION["description"]?>>
           <br><br><button type="button" name="submit" onclick="checkempty()" value="submit">Submit</button>
           <button type="submit" name="submit" formaction="addPreview.php" value="submit">Preview</button>
           <button type="button" onclick="resetText()" value="reset">Clear</button>
