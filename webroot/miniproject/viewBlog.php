@@ -18,13 +18,29 @@
       <li><a href="portfolio.php">Portfolio</a></li>
       <li><a href="contact.php">Contact</a></li>
       <li><a href=#>Blog</a></li>
-      <li><a href='logout.php'>Log Out</a></li>
+      <?php
+        session_start();
+        if (isset($_SESSION["firstname"]) || (!empty($_SESSION["firstname"])))
+        {
+          echo "<li><a href='logout.php'>Log Out</a></li>";
+        }
+      ?>
     </ul>
   </nav>
 
   <section class="topme">
     <article class="add">
-      <button type="button" onclick="location.href='createPost.php'">Add post</button>
+      <?php
+        if (isset($_SESSION["firstname"]) || (!empty($_SESSION["firstname"])))
+        {
+          echo "<button type='button' onclick='location.href='login.html''>Log in to add posts</button>";
+        }
+        else
+        {
+          echo "<button type='button' onclick='location.href='createPost.php''>Add post</button>";
+        }
+      ?>
+
     </article>
     <article class="search">
       <form id="monthpick" method="POST" action="viewBlog.php">

@@ -21,7 +21,7 @@
         session_start();
         if (!isset($_SESSION["firstname"]) || empty($_SESSION["firstname"]))
         {
-          echo "<li><a href='login.html'>Blog</a></li>";
+          echo "<li><a href='viewBlog.php'>Blog</a></li>";
         }
         else
         {
