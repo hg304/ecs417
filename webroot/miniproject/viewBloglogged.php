@@ -30,7 +30,7 @@
 
   <section class="topme">
     <article class="add">
-      <button type='button' onclick="location.href='makePost.html'">Add post</button>
+      <button type='button' onclick="location.href='createPost.html'">Add post</button>
     </article>
     <article class="search">
       <form id="monthpick" method="POST" action="viewBloglogged.php">
