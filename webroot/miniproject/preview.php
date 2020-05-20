@@ -21,14 +21,18 @@
     <article class="add">
       <p>The first post shown is the post you are currently previewing. Do you wish to upload this></p><br>
       <button type="button" onclick="location.href='viewBlog.php'">Send</button>
-      <button type="button" onclick="location.href='remove.php'">Go back</button>
+      <button type="button" onclick="location.href='createPost.php'">Go back</button>
     </article>
   </section><br>
 
   <section>
     <h2 style="font-family: Tahoma;">Recent blog posts:</h2>
     <article class="blogbox">
+
     <?php
+      $title = $_GET["title"];
+      $description = $_GET["description"];
+      echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $title, "</h3><p><style='color: white; font-family: Tahoma;'>", $description, "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A"), "</small></p><hr>";
       include("config.php");
 
       $res = mysqli_query($conn, "SELECT * FROM BLOG;");

@@ -29,7 +29,7 @@ session_start();
           <input type="text" id="title" placeholder="Title" name="title" <?php echo "value=", $_SESSION["title"]?>><br><br>
           <textarea id="description" name="description" placeholder="Write anything here" <?php echo "value=", $_SESSION["description"]?>></textarea>
           <br><br><button type="button" name="submit" onclick="checkempty()" value="submit">Submit</button>
-          <button type="submit" name="submit" formaction="addPreview.php" value="submit">Preview</button>
+          <button type="submit" name="submit" formaction="preview.php" value="submit">Preview</button>
           <button type="button" onclick="resetText()" value="reset">Clear</button>
           <script>
 
