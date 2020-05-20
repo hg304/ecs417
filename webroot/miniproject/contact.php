@@ -32,7 +32,7 @@
   </nav>
 
   <section id="left">
-    <article class="info">
+    <article class="contact">
       <h2>Contact details</h2>
       <h3>You can contact me with the following:</h3>
       <p>Mailing address:</p>
@@ -40,8 +40,8 @@
       <p>E-mail address:<br>hasib78680@gmail.com</p>
       <p>Mobile number:<br>07497479859</p>
       <h4>My Socials</h4>
-      <button type="button" class="social" onclick="location.href:https://www.facebook.com/imsosickatgaming" ><img class="social" src="https://www.facebook.com/images/fb_icon_325x325.png"></button>
-      <button type="button" class="social"><a href="https://uk.linkedin.com/in/hasibullah-ghulamhaidar-231953197"><img class="social" src="https://nextforme.com/wp-content/uploads/2018/11/linkedin-logo.png"></img></button>
+      <a href="https://www.facebook.com/imsosickatgaming"><img class="social" src="https://www.facebook.com/images/fb_icon_325x325.png"></img>
+      <a href="https://uk.linkedin.com/in/hasibullah-ghulamhaidar-231953197"><img class="social" src="https://nextforme.com/wp-content/uploads/2018/11/linkedin-logo.png"></img>
     </article>
   </section>
 

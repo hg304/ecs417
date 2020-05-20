@@ -63,8 +63,8 @@ if (isset($_GET["submit"]))
                   <input type="text" id="email" name="email">
                   <br><br><label for="password">Password:</label><br>
                   <input type="password" id="password" name="password">
-                  <br><br><button type="submit" class="blue" name="submit" value="submit">Submit</button>
-        		      <button type="button" class="blue" onclick="resetText()" value="reset">Clear</button>
+                  <br><br><button type="submit" name="submit" value="submit">Submit</button>
+        		      <button type="button" onclick="resetText()" value="reset">Clear</button>
                   <script>
                       function resetText()
                       {
