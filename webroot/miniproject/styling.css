@@ -110,8 +110,14 @@ figcaption {
   background-color: #3176f5;
 }
 
+.blogsection
+{
+  float: right;
+}
+
 .blogbox
 {
+  float:right;
   background-color: #3176f5;
   color: white;
   font-family: Tahoma;

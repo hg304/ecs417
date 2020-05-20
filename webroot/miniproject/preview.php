@@ -26,7 +26,7 @@
     </article>
   </section><br>
 
-  <section>
+  <section class="blogsection">
     <h2 style="font-family: Tahoma;">Recent blog posts:</h2>
     <article class="blogbox">
 
