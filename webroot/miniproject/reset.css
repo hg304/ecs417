@@ -1,4 +1,4 @@
-html, body, header, nav, figure, h1, h2, h3, h4, p, a, section, img, li, ul, footer, form, textarea, article, aside
+html, body, header, nav, figure, h1, h2, h3, h4, p, a, section, img, li, ul, footer, form, button, input, textarea, article, aside, small
 {
   margin: 0;
   padding: 0;
@@ -6,4 +6,5 @@ html, body, header, nav, figure, h1, h2, h3, h4, p, a, section, img, li, ul, foo
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  background-color: inherit;
 }
