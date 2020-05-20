@@ -1,11 +1,16 @@
 <?php
   include("config.php");
-  session_start();
 
-  $title = $_SESSION["title"];
-  $description = $_SESSION["description"];
+  $res = mysqli_query($conn, "SELECT * FROM BLOG;");
+  if (!$res)
+   {
+    printf("Error: %s\n", mysqli_error($conn));
+    exit();
+   }
 
-  $res = mysqli_query($conn, "DELETE * FROM BLOG WHERE description = '$description';");
+   $position = mysqli_num_rows($res);
+
+  $res = mysqli_query($conn, "DELETE * FROM BLOG WHERE id = '$position';");
   if (!$res)
    {
     printf("Error: %s\n", mysqli_error($conn));
