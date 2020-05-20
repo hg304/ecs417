@@ -43,20 +43,21 @@ session_start();
 
               function checkempty(number)
               {
+                var form = document.getElementById("enter");
                 if (number == 1)
                 {
-                  document.enter.action = "addPost.php";
+                  form.action = "addPost.php";
                 }
                 else if (number == 2)
                 {
-                  document.enter.action = "preview.php";
+                  form.action = "preview.php";
                 }
                 var title = document.getElementById("title");
                 var desc = document.getElementById("description");
 
                 if (title.value.length > 0 && desc.value.length > 0)
                 {
-                  document.enter.submit();
+                  form.submit();
                 }
                 else
                 {
