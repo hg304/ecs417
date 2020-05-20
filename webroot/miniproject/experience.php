@@ -2,7 +2,7 @@
 <head>
   <title>Experience</title>
 
-  <link rel="stylesheet" type="text/css" href="styling.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
 </head>
 
 <body>
