@@ -34,11 +34,11 @@
         session_start();
         if (!isset($_SESSION["firstname"]) || empty($_SESSION["firstname"]))
         {
-          echo "<button type='button' onclick='location.href="login.html"'>Log in to add posts</button>";
+          echo "<button type='button' onclick=\'location.href='login.html'\'>Log in to add posts</button>";
         }
         else
         {
-          echo "<button type='button' onclick='location.href="createPost.php"'>Add post</button>";
+          echo "<button type='button' onclick=\'location.href='createPost.php'\'>Add post</button>";
         }
       ?>
 
