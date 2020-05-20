@@ -4,7 +4,7 @@ session_start();
 <html>
 <head>
   <title>Make a post</title>
-  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styling.css">
 </head>
 
 <body>
