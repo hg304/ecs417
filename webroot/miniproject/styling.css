@@ -48,7 +48,6 @@ aside {
 }
 
 #left .contact h4, p, h3, h2, a{
-  float: right;
   text-align: center;
   font-family: Tahoma;
 }
