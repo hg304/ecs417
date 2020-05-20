@@ -26,7 +26,7 @@
       <button type='button' onclick="location.href='login.html'">Login to add posts</button>
     </article>
     <article class="search">
-      <form id="monthpick" method="POST" action="viewBlog.php">
+      <form id="monthpick" method="POST" action="viewBlognotlogged.php">
         <label for="months">Select month</label>
         <select name="months" id="months">
           <option value="1">January</option>
