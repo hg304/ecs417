@@ -101,7 +101,7 @@
             echo "<h3><style='font-family: Tahoma; text-align: center; color: white;'>", $result["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $result[description], "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), "</small></p><hr>";
           }
        }
-     ?>
+     ?><br>
    </article>
    <footer>
      <small><strong>Copyright &copy Hasibullah Ghulamhaidar 2020</strong></small>
