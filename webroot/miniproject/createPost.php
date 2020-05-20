@@ -47,47 +47,49 @@
                 var prevbutton = document.getElementById("preview");
 
                 subbutton.addEventListener("click", function(e){
-                  if (title.value.length > 0)
-                  {
-                    title.style.borderColor = "white";
-                  }
-                  else
+                  if (title.value.length == 0 || desc.value.length == 0)
                   {
                     alert("Both fields have not been filled in");
-                    title.style.borderColor = "red";
-                    e.preventDefault();
-                  }
-                  if (desc.value.length > 0)
-                  {
-                    desc.style.borderColor = "white";
-                  }
-                  else
-                  {
-                    alert("Both fields have not been filled in");
-                    desc.style.borderColor = "red";
+                    if (title.value.length == 0)
+                    {
+                      title.style.borderColor = "red";
+                    }
+                    if (desc.value.length == 0)
+                    {
+                      desc.style.borderColor = "red";
+                    }
+                    if (title.value.length > 0)
+                    {
+                      title.style.borderColor = "white";
+                    }
+                    if (desc.value.length > 0)
+                    {
+                      desc.style.borderColor = "white";
+                    }
                     e.preventDefault();
                   }
                 }, false);
 
                 prevbutton.addEventListener("click", function(e){
-                  if (title.value.length > 0)
-                  {
-                    title.style.borderColor = "white";
-                  }
-                  else
+                  if (title.value.length == 0 || desc.value.length == 0)
                   {
                     alert("Both fields have not been filled in");
-                    title.style.borderColor = "red";
-                    e.preventDefault();
-                  }
-                  if (desc.value.length > 0)
-                  {
-                    desc.style.borderColor = "white";
-                  }
-                  else
-                  {
-                    alert("Both fields have not been filled in");
-                    desc.style.borderColor = "red";
+                    if (title.value.length == 0)
+                    {
+                      title.style.borderColor = "red";
+                    }
+                    if (desc.value.length == 0)
+                    {
+                      desc.style.borderColor = "red";
+                    }
+                    if (title.value.length > 0)
+                    {
+                      title.style.borderColor = "white";
+                    }
+                    if (desc.value.length > 0)
+                    {
+                      desc.style.borderColor = "white";
+                    }
                     e.preventDefault();
                   }
                 }, false);
