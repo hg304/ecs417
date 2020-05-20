@@ -35,7 +35,7 @@
       $_SESSION["title"] = $_POST["title"];
       $_SESSION["description"] = $_POST["description"];
 
-      echo "<h3><style='font-family: Tahoma; text-align: right; color: white;'>", $_SESSION["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $_SESSION["description"], "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A"), "</small></p><hr>";
+      echo "<h3><style='font-family: Tahoma; text-align: right; color: white;'>", $_SESSION["title"], "</h3><p><style='color: white; font-family: Tahoma;'>", $_SESSION["description"], "</p><p><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A"), " UTC</small></p><hr>";
       include("config.php");
 
       $res = mysqli_query($conn, "SELECT * FROM BLOG;");
@@ -58,7 +58,7 @@
 
          $result = mysqli_fetch_array($res2);
 
-         echo "<h3 class='blogtext'>", $result["title"], "</h3><p class='blogtext'>", $result["description"], "</p><p class='blogtext'><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), "</small></p><hr>";
+         echo "<h3 class='blogtext'>", $result["title"], "</h3><p class='blogtext'>", $result["description"], "</p><p class='blogtext'><br><small style='color:white; font-family:Tahoma;'>Posted: ", date("d/m/y g:i A", strtotime($result["datepost"])), " UTC</small></p><hr>";
         }
      ?>
    </article>
