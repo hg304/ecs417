@@ -13,6 +13,9 @@
       printf("Error: %s\n", mysqli_error($conn));
       exit();
     }
+    unset($_SESSION["title"]);
+    unset($_SESSION["description"]);
+    session_destroy();
 
     header("Location:viewBloglogged.php");
   }
