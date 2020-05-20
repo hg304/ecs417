@@ -52,17 +52,16 @@
     <?php
       include("config.php");
 
-      $res = mysqli_query($conn, "SELECT * FROM BLOG;");
-      if (!$res)
-       {
-        printf("Error: %s\n", mysqli_error($conn));
-        exit();
-       }
-
-       $rows = mysqli_num_rows($res);
-
       if ($_POST["months"] == null)
       {
+        $res = mysqli_query($conn, "SELECT * FROM BLOG;");
+        if (!$res)
+         {
+          printf("Error: %s\n", mysqli_error($conn));
+          exit();
+         }
+
+         $rows = mysqli_num_rows($res);
          for ($i = $rows; $i > 0; $i--)
          {
            $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i';");
@@ -80,9 +79,17 @@
        else
        {
          $month = $_POST["months"];
-          for ($i = $rows; $i > 0; $i--)
+         $res = mysqli_query($conn, "SELECT * FROM BLOG WHERE MONTH(datepost) = '$month';");
+         if (!$res)
           {
-            $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE id = '$i' AND MONTH(datepost) = '$month';");
+           printf("Error: %s\n", mysqli_error($conn));
+           exit();
+          }
+
+          $rows = mysqli_num_rows($res);
+          for ($i = 31; $i > 0; $i--)
+          {
+            $res2 = mysqli_query($conn, "SELECT * FROM BLOG WHERE DAY(datepost) = '$i' AND MONTH(datepost) = '$month';");
             if (!$res2)
              {
               printf("Error: %s\n", mysqli_error($conn));
