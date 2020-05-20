@@ -29,7 +29,6 @@ session_start();
           <input type="text" id="title" placeholder="Title" name="title" <?php echo "value=", $_SESSION["title"]?>><br><br>
           <textarea id="description" name="description" placeholder="Write anything here" <?php echo "value=", $_SESSION["description"]?>></textarea>
           <br><br><button type="button" name="submit" onclick="checkempty()" value="submit">Submit</button>
-        
           <button type="button" onclick="resetText()" value="reset">Clear</button>
           <script>
 
@@ -43,9 +42,9 @@ session_start();
 
               function checkempty()
               {
-                var form = document.getElementById("enter");
                 var title = document.getElementById("title");
                 var desc = document.getElementById("description");
+                var form = document.getElementById("enter");
 
                 if (title.value.length > 0 && desc.value.length > 0)
                 {
