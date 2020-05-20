@@ -2,13 +2,12 @@
   include("config.php");
   session_start();
 
-  if (!isset($_SESSION["title"]))
+  if (!empty($_SESSION["title"]))
   {
     $title = $_SESSION["title"];
     $description = $_SESSION["description"];
-    $time = $_SESSION["time"];
 
-    $res = mysqli_query($conn, "INSERT INTO BLOG (title, description, datepost) VALUES ('$title', '$description', '$time');");
+    $res = mysqli_query($conn, "INSERT INTO BLOG (title, description, datepost) VALUES ('$title', '$description', now());");
     if (!$res)
     {
       printf("Error: %s\n", mysqli_error($conn));
